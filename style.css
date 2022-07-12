@@ -1,0 +1,38 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgba(97, 166, 206, 0.671);
+}
+
+.container {
+    width: 962px;
+    height: 962px;
+    padding: 1px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+}
+
+.box {
+    border: 0px solid bisque;
+    background-color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.curr-res {
+    text-align: center;
+}
+
+.change-res-btn {
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 8px 16px;
+}
