@@ -32,7 +32,13 @@ body {
 }
 
 .change-res-btn {
-    margin: 30px auto;
+    margin: 30px;
     font-size: 20px;
     padding: 8px 16px;
+}
+
+.monochrome-btn {
+    font-size: 20px;
+    padding: 8px 16px;
+    align-self: center;
 }
