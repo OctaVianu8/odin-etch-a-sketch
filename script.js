@@ -1,12 +1,17 @@
 const canvasSize=960;
 const canvas = document.querySelector(".container")
 const changeResBtn = document.querySelector('.change-res-btn')
+const currResText = document.querySelector('.curr-res');
 
 changeResBtn.addEventListener('click', changeRes);
 
 function changeRes()
 {
     res = prompt('What would you like the canvas resolution to be? (A.K.A. number of boxes per row)');
+    if(res >100) {
+        currResText.textContent = `error: resolution must be less than 100`
+        return;
+    }
     deleteAllChildren(canvas);
     addDivs(res);
     setCurrResText(res);
@@ -14,7 +19,6 @@ function changeRes()
 
 function setCurrResText(res)
 {
-    const currResText = document.querySelector('.curr-res');
     currResText.textContent = `The current resolution is ${res} x ${res} px`
 }
 
